@@ -20,6 +20,10 @@ public class ExportadorCsv extends Exportador {
             directorio.mkdirs();
         }
         try {
+            boolean archivoCreado = fichero.createNewFile();
+            if (!archivoCreado) {
+                System.out.println("El archivo no se pudo crear.");
+            }
             fichero.createNewFile();
             PrintWriter pw = new PrintWriter(new FileWriter(fichero));
             for (Cliente cliente : listaClientes) {

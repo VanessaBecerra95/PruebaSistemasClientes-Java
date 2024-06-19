@@ -18,8 +18,7 @@ public class Utilidad {
             Thread.sleep(1000);
             System.out.println("Acaba de salir del sistema");
         } catch (Exception e) {
-            System.out.println(e);
-
+            e.printStackTrace();
         }
     }
 }

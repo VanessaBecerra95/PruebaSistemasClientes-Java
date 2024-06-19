@@ -10,9 +10,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ArchivoServicio extends Exportador {
-    private Scanner scanner = new Scanner(System.in);
-    private ExportadorCsv exportadorCsv = new ExportadorCsv();
-    private ExportadorTxt exportadorTxt = new ExportadorTxt();
+    private final Scanner scanner = new Scanner(System.in);
+    private final ExportadorCsv exportadorCsv = new ExportadorCsv();
+    private final ExportadorTxt exportadorTxt = new ExportadorTxt();
 
 
     public List<Cliente> cargarDatos() {

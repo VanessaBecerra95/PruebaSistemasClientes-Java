@@ -17,7 +17,6 @@ public class Menu {
     private final String fileName = "clientes";
     private final String fileName1 = "DBClientes.csv";
     private Scanner scanner;
-    private Utilidad utilidad;
     private List<Cliente> listaClientes;
 
     public Menu() {
@@ -56,10 +55,10 @@ public class Menu {
                         terminarPrograma();
                         break;
                     default:
-                        System.out.println("Opción no válida");
+                        Utilidad.imprimir("Opción no válida");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Debe ingresar los números de las opciones disponibles");
+                Utilidad.imprimir("Debe ingresar los números de las opciones disponibles");
                 scanner.nextLine();
             }
         }while (opcion != 6);

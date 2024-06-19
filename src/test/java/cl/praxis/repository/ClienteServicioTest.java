@@ -13,8 +13,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.*;
 
 public class ClienteServicioTest {
-    private static Logger logger = Logger.getLogger(ClienteServicioTest.class.getName());
-    private ClienteServicio clienteServicio = new ClienteServicio();
+    private final static Logger logger = Logger.getLogger(ClienteServicioTest.class.getName());
+    private final ClienteServicio clienteServicio = new ClienteServicio();
 
     @BeforeAll
     public static void init(){

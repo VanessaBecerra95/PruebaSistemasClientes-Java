@@ -10,13 +10,11 @@ public class ClienteServicio {
     private List<Cliente> listaClientes;
     Scanner scanner;
     Utilidad utilidad;
-    Cliente cliente;
 
     public ClienteServicio() {
         this.listaClientes = new ArrayList<>();
         this.scanner = new Scanner(System.in);
         this.utilidad = new Utilidad();
-        Cliente cliente = new Cliente();
     }
 
     public void setListaClientes(List<Cliente> listaClientes) {
@@ -179,9 +177,6 @@ public class ClienteServicio {
 
     public List<Cliente> getListaClientes() {
         return listaClientes;
-    }
-
-    public void setListaClientes(ArrayList<Cliente> clientesCargados) {
     }
 
 }
